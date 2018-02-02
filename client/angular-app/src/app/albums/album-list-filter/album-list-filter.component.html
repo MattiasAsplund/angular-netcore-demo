@@ -1,5 +1,5 @@
-<mat-selection-list>
-  <mat-list-option *ngFor="let genre of genres">
-    {{genre}}
-  </mat-list-option>
-</mat-selection-list>
+<mat-nav-list>
+  <mat-list-item *ngFor="let genre of genres" (click)="checkGenre()">
+  <mat-radio-button #mrb [value]="genre">{{genre}}</mat-radio-button>
+  </mat-list-item>
+</mat-nav-list>

@@ -46,6 +46,7 @@ import {
   MatStepperModule,
 } from '@angular/material';
 import {CdkTableModule} from '@angular/cdk/table';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
   exports: [
@@ -83,7 +84,8 @@ import {CdkTableModule} from '@angular/cdk/table';
     MatTooltipModule,
     BrowserAnimationsModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FlexLayoutModule
   ]
 })
 export class MaterialModule {
