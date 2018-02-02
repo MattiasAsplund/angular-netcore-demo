@@ -1,0 +1,67 @@
+[
+    {
+        "AlbumId": 8,
+        "Title": "Warner 25 Anos",
+        "ArtistId": 6
+    },
+    {
+        "AlbumId": 13,
+        "Title": "The Best Of Billy Cobham",
+        "ArtistId": 10
+    },
+    {
+        "AlbumId": 38,
+        "Title": "Heart of the Night",
+        "ArtistId": 53
+    },
+    {
+        "AlbumId": 48,
+        "Title": "The Essential Miles Davis [Disc 1]",
+        "ArtistId": 68
+    },
+    {
+        "AlbumId": 49,
+        "Title": "The Essential Miles Davis [Disc 2]",
+        "ArtistId": 68
+    },
+    {
+        "AlbumId": 51,
+        "Title": "Up An' Atom",
+        "ArtistId": 69
+    },
+    {
+        "AlbumId": 68,
+        "Title": "Outbreak",
+        "ArtistId": 79
+    },
+    {
+        "AlbumId": 87,
+        "Title": "Quanta Gente Veio ver--Bônus De Carnaval",
+        "ArtistId": 27
+    },
+    {
+        "AlbumId": 93,
+        "Title": "Blue Moods",
+        "ArtistId": 89
+    },
+    {
+        "AlbumId": 157,
+        "Title": "Miles Ahead",
+        "ArtistId": 68
+    },
+    {
+        "AlbumId": 204,
+        "Title": "Morning Dance",
+        "ArtistId": 53
+    },
+    {
+        "AlbumId": 262,
+        "Title": "Quiet Songs",
+        "ArtistId": 197
+    },
+    {
+        "AlbumId": 267,
+        "Title": "Worlds",
+        "ArtistId": 202
+    }
+]
