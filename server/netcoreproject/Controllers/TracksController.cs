@@ -27,6 +27,13 @@ namespace netcoreproject.Controllers
             return _context.Track;
         }
 
+        // GET: api/AlbumsByGenre
+        [Route("/api/tracksbyalbum/{id}")]
+        public IEnumerable<Track> GetTracksByAlbum([FromRoute] long id)
+        {
+            return _context.Track.Where(t => t.Album.AlbumId == id);
+        }
+
         // GET: api/Tracks/5
         [HttpGet("{id}")]
         public async Task<IActionResult> GetTrack([FromRoute] long id)
