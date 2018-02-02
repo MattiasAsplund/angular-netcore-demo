@@ -6,7 +6,7 @@
   "apps": [
     {
       "root": "src",
-      "outDir": "../../server/netcoreproject/wwwroot/dist",
+      "outDir": "../../server/netcoreproject/wwwroot",
       "assets": [
         "assets"
       ],
@@ -16,9 +16,9 @@
       "test": "test.ts",
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
-      "prefix": "app",
+      "prefix": null,
       "styles": [
-        "assets/styles.css"
+        "assets/styles.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
