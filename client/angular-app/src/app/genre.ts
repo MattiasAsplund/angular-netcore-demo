@@ -1,3 +1,3 @@
 export class Genre {
-    constructor(public GenreId: number, public Name: string) {}
+    constructor(public genreId: number, public name: string) {}
 }

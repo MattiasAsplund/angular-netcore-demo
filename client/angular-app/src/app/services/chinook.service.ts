@@ -1,14 +1,18 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Inject, isDevMode } from '@angular/core';
 import { Http } from '@angular/http';
 import { Genre } from '../genre';
 import { Observable } from 'rxjs/Observable';
+import { Chinook } from './chinook';
 
 @Injectable()
-export class ChinookService {
+export class ChinookService implements Chinook {
 
   constructor(public http: Http) { }
 
   genres() : any {
-    return this.http.get("assets/chinook/genres.json");
+    if(!isDevMode())
+      return this.http.get("api/genres");
+    else 
+      return this.http.get("assets/chinook/genres.json");
   }
 }

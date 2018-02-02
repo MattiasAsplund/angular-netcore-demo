@@ -24,7 +24,7 @@ namespace netcoreproject.Controllers
         [HttpGet]
         public IEnumerable<Genre> GetGenre()
         {
-            return _context.Genre;
+            return _context.Genre.OrderBy(genre => genre.Name);
         }
 
         // GET: api/Genres/5

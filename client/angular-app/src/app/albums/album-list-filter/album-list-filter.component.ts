@@ -1,7 +1,7 @@
-import {Component, OnInit} from '@angular/core';
-import { ChinookService } from '../../services/chinook.service';
+import {Component, OnInit, Inject} from '@angular/core';
 import { Genre } from '../../genre';
 import { Observable } from 'rxjs/Observable';
+import { Chinook } from '../../services/chinook';
 
 @Component({
   selector: 'album-list-filter',
@@ -10,7 +10,7 @@ import { Observable } from 'rxjs/Observable';
 })
 export class AlbumListFilterComponent implements OnInit {
 
-  constructor(chinook: ChinookService) {        
+  constructor(@Inject("Chinook") chinook: Chinook) {        
     chinook.genres().subscribe(genre => {
       this.genres = genre.json();
     });

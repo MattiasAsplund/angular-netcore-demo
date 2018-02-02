@@ -25,7 +25,9 @@ import { ChinookService } from './services/chinook.service';
     AlbumsModule,
     HttpModule
   ],
-  providers: [ChinookService],
+  providers: [
+    {provide: "Chinook", useClass: ChinookService} 
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

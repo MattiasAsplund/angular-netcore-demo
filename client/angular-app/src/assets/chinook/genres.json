@@ -1,102 +1,102 @@
 [
     {
-        "GenreId": 1,
-        "Name": "Rock"
+        "genreId": 1,
+        "name": "Rock"
     },
     {
-        "GenreId": 2,
-        "Name": "Jazz"
+        "genreId": 2,
+        "name": "Jazz"
     },
     {
-        "GenreId": 3,
-        "Name": "Metal"
+        "genreId": 3,
+        "name": "Metal"
     },
     {
-        "GenreId": 4,
-        "Name": "Alternative & Punk"
+        "genreId": 4,
+        "name": "Alternative & Punk"
     },
     {
-        "GenreId": 5,
-        "Name": "Rock And Roll"
+        "genreId": 5,
+        "name": "Rock And Roll"
     },
     {
-        "GenreId": 6,
-        "Name": "Blues"
+        "genreId": 6,
+        "name": "Blues"
     },
     {
-        "GenreId": 7,
-        "Name": "Latin"
+        "genreId": 7,
+        "name": "Latin"
     },
     {
-        "GenreId": 8,
-        "Name": "Reggae"
+        "genreId": 8,
+        "name": "Reggae"
     },
     {
-        "GenreId": 9,
-        "Name": "Pop"
+        "genreId": 9,
+        "name": "Pop"
     },
     {
-        "GenreId": 10,
-        "Name": "Soundtrack"
+        "genreId": 10,
+        "name": "Soundtrack"
     },
     {
-        "GenreId": 11,
-        "Name": "Bossa Nova"
+        "genreId": 11,
+        "name": "Bossa Nova"
     },
     {
-        "GenreId": 12,
-        "Name": "Easy Listening"
+        "genreId": 12,
+        "name": "Easy Listening"
     },
     {
-        "GenreId": 13,
-        "Name": "Heavy Metal"
+        "genreId": 13,
+        "name": "Heavy Metal"
     },
     {
-        "GenreId": 14,
-        "Name": "R&B\/Soul"
+        "genreId": 14,
+        "name": "R&B\/Soul"
     },
     {
-        "GenreId": 15,
-        "Name": "Electronica\/Dance"
+        "genreId": 15,
+        "name": "Electronica\/Dance"
     },
     {
-        "GenreId": 16,
-        "Name": "World"
+        "genreId": 16,
+        "name": "World"
     },
     {
-        "GenreId": 17,
-        "Name": "Hip Hop\/Rap"
+        "genreId": 17,
+        "name": "Hip Hop\/Rap"
     },
     {
-        "GenreId": 18,
-        "Name": "Science Fiction"
+        "genreId": 18,
+        "name": "Science Fiction"
     },
     {
-        "GenreId": 19,
-        "Name": "TV Shows"
+        "genreId": 19,
+        "name": "TV Shows"
     },
     {
-        "GenreId": 20,
-        "Name": "Sci Fi & Fantasy"
+        "genreId": 20,
+        "name": "Sci Fi & Fantasy"
     },
     {
-        "GenreId": 21,
-        "Name": "Drama"
+        "genreId": 21,
+        "name": "Drama"
     },
     {
-        "GenreId": 22,
-        "Name": "Comedy"
+        "genreId": 22,
+        "name": "Comedy"
     },
     {
-        "GenreId": 23,
-        "Name": "Alternative"
+        "genreId": 23,
+        "name": "Alternative"
     },
     {
-        "GenreId": 24,
-        "Name": "Classical"
+        "genreId": 24,
+        "name": "Classical"
     },
     {
-        "GenreId": 25,
-        "Name": "Opera"
+        "genreId": 25,
+        "name": "Opera"
     }
 ]
