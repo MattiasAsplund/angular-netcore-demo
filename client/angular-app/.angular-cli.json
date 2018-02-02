@@ -6,7 +6,7 @@
   "apps": [
     {
       "root": "src",
-      "outDir": "../../server/netcoreproject/wwwroot/dist",
+      "outDir": "../../server/netcoreproject/wwwroot",
       "assets": [
         "assets"
       ],
