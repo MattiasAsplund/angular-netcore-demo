@@ -1,12 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http'
+
 import { AppComponent } from './app.component';
 import {CoreModule} from './core/core.module';
+
 import {MaterialModule, SharedModule} from './shared/shared.module';
 import {LayoutModule} from './layout/layout.module';
 import {RouterModule} from '@angular/router';
 import {AlbumsModule} from './albums/albums.module';
-
+import { ChinookService } from './services/chinook.service';
 
 @NgModule({
   declarations: [
@@ -19,9 +22,10 @@ import {AlbumsModule} from './albums/albums.module';
     LayoutModule,
     RouterModule,
     MaterialModule,
-    AlbumsModule
+    AlbumsModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [ChinookService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
