@@ -1,5 +1,6 @@
 # angular-netcore-demo
 Angular and .NET Core in a nice SPA/Web API combo
+
 Copyright (c) 2018 Mattias Asplund & Emil H. Södergren
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated 
