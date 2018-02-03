@@ -1,5 +1,5 @@
 <mat-nav-list>
-  <mat-list-item *ngFor="let genre of genres" (click)="checkGenre()">
-  <mat-radio-button #mrb [value]="genre.genreId">{{genre.name}}</mat-radio-button>
+  <mat-list-item *ngFor="let genre of genres | async">
+    <mat-radio-button #mrb [value]="genre.genreId">{{genre.name}}</mat-radio-button>
   </mat-list-item>
 </mat-nav-list>

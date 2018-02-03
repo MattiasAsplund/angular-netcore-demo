@@ -1,15 +1,20 @@
 import {EnvEndpoint} from './env.endpoint';
 
-export class Endpoint {
-  get albums() {
+export const Endpoint = {
+  get albums(): string {
     return `${EnvEndpoint.base}/albums`;
-  }
+  },
 
-  albumById(id: any) {
+  get genres() : string {
+    return EnvEndpoint.compose('/genres');
+  },
+
+  albumById(id: any) : string{
     return `${EnvEndpoint.base}/albumsbygenre/${id}`;
-  }
+  },
 
-  tracksByAlbum(id: any) {
+  tracksByAlbum(id: any): string {
     return `${EnvEndpoint.base}/tracksbyalbum/${id}`;
   }
-}
+};
+
