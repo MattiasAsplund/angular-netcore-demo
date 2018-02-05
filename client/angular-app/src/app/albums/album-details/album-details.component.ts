@@ -23,17 +23,16 @@ export class AlbumDetailsComponent {
     this._dataSource = value;
   }
 
-   private _dataSource = new MatTableDataSource<Track>();
+  private _dataSource = new MatTableDataSource<Track>();
 
   constructor(@Inject('Chinook') private chinookService: Chinook,
               private activatedRoute: ActivatedRoute,
               private router: Router) {
     this.getTracksByAlbumId();
-
   }
 
   getTracksByAlbumId() {
-    this.chinookService.tracksByAlbum(+this.activatedRoute.snapshot.params['albumId'])
+    this.chinookService.tracksByAlbum(+this.activatedRoute.snapshot.params['albumid'])
       .first()
       .subscribe((tracks: Track[]) => {
           this.dataSource = new MatTableDataSource<Track>(tracks);
