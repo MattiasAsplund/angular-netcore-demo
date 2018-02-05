@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SidenavComponent } from './sidenav.component';
+import { AlbumDetailsTracksComponent } from './album-details-tracks.component';
 
-describe('SidenavComponent', () => {
-  let component: SidenavComponent;
-  let fixture: ComponentFixture<SidenavComponent>;
+describe('AlbumDetailsTracksComponent', () => {
+  let component: AlbumDetailsTracksComponent;
+  let fixture: ComponentFixture<AlbumDetailsTracksComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SidenavComponent ]
+      declarations: [ AlbumDetailsTracksComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SidenavComponent);
+    fixture = TestBed.createComponent(AlbumDetailsTracksComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

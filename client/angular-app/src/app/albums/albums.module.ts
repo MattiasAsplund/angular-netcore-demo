@@ -2,24 +2,28 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {AlbumListComponent} from './album-list/album-list.component';
 import {AlbumListFilterComponent} from './album-list-filter/album-list-filter.component';
-import { AlbumsComponent } from './albums.component';
-import {LayoutModule} from '../layout/layout.module';
+import {AlbumsComponent} from './albums.component';
 import {MaterialModule} from '../shared/shared.module';
+import {SidenavResponsiveDirective} from '../shared/directives/sidenav-responsive.directive';
+import {AlbumDetailsComponent} from './album-details/album-details.component';
+import {RouterModule} from '@angular/router';
+import {AlbumDetailsTracksComponent} from './album-details-tracks/album-details-tracks.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    LayoutModule,
-    MaterialModule
+    MaterialModule,
+    RouterModule
   ],
   declarations: [
     AlbumListComponent,
     AlbumListFilterComponent,
-    AlbumsComponent
+    AlbumsComponent,
+    AlbumDetailsComponent,
+    SidenavResponsiveDirective,
+    AlbumDetailsTracksComponent,
   ],
   exports: [
-    AlbumListComponent,
-    AlbumListFilterComponent,
     AlbumsComponent
   ]
 })

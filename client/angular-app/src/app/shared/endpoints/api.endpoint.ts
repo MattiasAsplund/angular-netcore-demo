@@ -1,20 +1,46 @@
 import {EnvEndpoint} from './env.endpoint';
+import {environment} from '../../../environments/environment';
 
 export const Endpoint = {
   get albums(): string {
-    return `${EnvEndpoint.base}/albums`;
+    return EnvEndpoint.base
+      + (environment.production
+        ? ChinookEndpoint_PROD.albums
+        : ChinookEndpoint_DEV.albums);
   },
 
-  get genres() : string {
-    return EnvEndpoint.compose('/genres');
+  get genres(): string {
+    return EnvEndpoint.base
+      + (environment.production
+        ? ChinookEndpoint_PROD.genres
+        : ChinookEndpoint_DEV.genres);
   },
 
-  albumById(id: any) : string{
-    return `${EnvEndpoint.base}/albumsbygenre/${id}`;
+  albumsByGenre(genreId: any): string {
+    return EnvEndpoint.base
+      + (environment.production
+        ? ChinookEndpoint_PROD.albumsByGenre + genreId
+        : ChinookEndpoint_DEV.albumsByGenre);
   },
 
-  tracksByAlbum(id: any): string {
-    return `${EnvEndpoint.base}/tracksbyalbum/${id}`;
+  tracksByAlbum(albumId: any): string {
+    return EnvEndpoint.base
+      + (environment.production
+        ? ChinookEndpoint_PROD.tracksByAlbum + albumId
+        : ChinookEndpoint_DEV.tracksByAlbum);
   }
 };
 
+export const ChinookEndpoint_PROD = {
+  albums: '/albums',
+  genres: '/genres',
+  albumsByGenre: '/albumsByGenre/',
+  tracksByAlbum: '/tracksByAlbum/',
+};
+
+export const ChinookEndpoint_DEV = {
+  albums: '/albums.json',
+  genres: '/genres.json',
+  albumsByGenre: '/albumsByGenre.json',
+  tracksByAlbum: '/tracksByAlbum_v2.json'
+};

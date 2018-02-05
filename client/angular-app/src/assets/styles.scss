@@ -4,3 +4,34 @@ html, body {
   padding: 0;
 }
 @import "../../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+.radiobutton > label.mat-radio-label{
+  width: 100%;
+  height: 100%;
+}
+main {
+  padding: 0 20px;
+  min-height: 300px;
+
+  /* side form */
+  .view-side-form {
+    > *> {
+      z-index: 100;
+    }
+    .side-form {
+      position: absolute;
+      z-index: 100;
+      top: 0;
+      right: 0;
+      width: 80%;
+      height: 100%;
+      overflow: auto;
+      background: #fff;
+      padding: 0;
+      border-left: 1px solid #e0e0e0;
+    }
+  }
+}
+album-details{
+  z-index: 100;
+}

@@ -1,3 +1,22 @@
-<p>
-  album-list works!
-</p>
+<div fxLayout="row" fxLayoutAlign="space-between" fxLayoutWrap>
+  <mat-card [@fadeInAnimation]
+            class="album-card"
+            fxFlex="33%"
+            fxFlex.lt-md="50%"
+            fxFlex.lt-sm="100%"
+            *ngFor="let album of albums | async">
+    <mat-card-header>
+      <button mat-button
+              [routerLink]="['details', album.albumId]"
+              preserveQueryParams
+              preserveFragment
+              style="width: 100%">
+        {{album.title}}
+      </button>
+    </mat-card-header>
+    <mat-card-content>
+      {{album.albumId}}
+      {{album.artistId}}
+    </mat-card-content>
+  </mat-card>
+</div>
