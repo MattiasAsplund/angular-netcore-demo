@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using netcoreproject.Models;
+using netcoreproject.ViewModels;
+using netcoreproject.ViewModels.Extensions;
 
 namespace netcoreproject.Controllers
 {
@@ -29,9 +31,11 @@ namespace netcoreproject.Controllers
 
         // GET: api/AlbumsByGenre
         [Route("/api/albumsbygenre/{id}")]
-        public IEnumerable<Album> GetAlbumsByGenre([FromRoute] long id)
+        public IEnumerable<AlbumViewModel> GetAlbumsByGenre([FromRoute] long id)
         {
-            return _context.Album.Where(a => a.Track.Any(t => t.GenreId == id));
+            return _context.Album.Include(x => x.Artist)
+               ?.Where(a => a.Track.Any(t => t.GenreId == id))
+                .ConvertToViewModel();
         }
 
         // GET: api/Albums/5
