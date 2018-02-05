@@ -1,67 +1,67 @@
 [
-    {
-        "albumId": 8,
-        "title": "Warner 25 Anos",
-        "artistId": 6
-    },
-    {
-        "albumId": 13,
-        "title": "The Best Of Billy Cobham",
-        "artistId": 10
-    },
-    {
-        "albumId": 38,
-        "title": "Heart of the Night",
-        "artistId": 53
-    },
-    {
-        "albumId": 48,
-        "title": "The Essential Miles Davis [Disc 1]",
-        "artistId": 68
-    },
-    {
-        "albumId": 49,
-        "title": "The Essential Miles Davis [Disc 2]",
-        "artistId": 68
-    },
-    {
-        "albumId": 51,
-        "title": "Up An' Atom",
-        "artistId": 69
-    },
-    {
-        "albumId": 68,
-        "title": "Outbreak",
-        "artistId": 79
-    },
-    {
-        "albumId": 87,
-        "title": "Quanta Gente Veio ver--Bônus De Carnaval",
-        "artistId": 27
-    },
-    {
-        "albumId": 93,
-        "title": "Blue Moods",
-        "artistId": 89
-    },
-    {
-        "albumId": 157,
-        "title": "Miles Ahead",
-        "artistId": 68
-    },
-    {
-        "albumId": 204,
-        "title": "Morning Dance",
-        "artistId": 53
-    },
-    {
-        "albumId": 262,
-        "title": "Quiet Songs",
-        "artistId": 197
-    },
-    {
-        "albumId": 267,
-        "title": "Worlds",
-        "artistId": 202
-    }
+  {
+    "albumId": 8,
+    "title": "Warner 25 Anos",
+    "artistName": "Antônio Carlos Jobim"
+  },
+  {
+    "albumId": 13,
+    "title": "The Best Of Billy Cobham",
+    "artistName": "Billy Cobham"
+  },
+  {
+    "albumId": 38,
+    "title": "Heart of the Night",
+    "artistName": "Spyro Gyra"
+  },
+  {
+    "albumId": 48,
+    "title": "The Essential Miles Davis [Disc 1]",
+    "artistName": "Miles Davis"
+  },
+  {
+    "albumId": 49,
+    "title": "The Essential Miles Davis [Disc 2]",
+    "artistName": "Miles Davis"
+  },
+  {
+    "albumId": 51,
+    "title": "Up An' Atom",
+    "artistName": "Gene Krupa"
+  },
+  {
+    "albumId": 68,
+    "title": "Outbreak",
+    "artistName": "Dennis Chambers"
+  },
+  {
+    "albumId": 87,
+    "title": "Quanta Gente Veio ver--Bônus De Carnaval",
+    "artistName": "Gilberto Gil"
+  },
+  {
+    "albumId": 93,
+    "title": "Blue Moods",
+    "artistName": "Incognito"
+  },
+  {
+    "albumId": 157,
+    "title": "Miles Ahead",
+    "artistName": "Miles Davis"
+  },
+  {
+    "albumId": 204,
+    "title": "Morning Dance",
+    "artistName": "Spyro Gyra"
+  },
+  {
+    "albumId": 262,
+    "title": "Quiet Songs",
+    "artistName": "Aisha Duo"
+  },
+  {
+    "albumId": 267,
+    "title": "Worlds",
+    "artistName": "Aaron Goldberg"
+  }
 ]
