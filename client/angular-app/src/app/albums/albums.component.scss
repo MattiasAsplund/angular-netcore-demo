@@ -29,3 +29,9 @@ h1.example-app-name {
      `<body>` to be our scrolling element for mobile layouts. */
   flex: 1 0 auto;
 }
+mat-sidenav-content{
+  padding: 15px;
+}
+.sidenav{
+  min-width: 200px !important;
+}

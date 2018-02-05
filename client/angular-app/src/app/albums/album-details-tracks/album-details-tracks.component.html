@@ -1,0 +1,32 @@
+<div class="example-container mat-elevation-z8">
+  <mat-table #table [dataSource]="dataSource">
+
+    <ng-container matColumnDef="trackId">
+      <mat-header-cell *matHeaderCellDef> trackId</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.trackId}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="trackName">
+      <mat-header-cell *matHeaderCellDef> trackName</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.trackName}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="artistName">
+      <mat-header-cell *matHeaderCellDef> artistName</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.artistName}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="composer">
+      <mat-header-cell *matHeaderCellDef> composer</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.composer}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="milliseconds">
+      <mat-header-cell *matHeaderCellDef> milliseconds</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.milliseconds}}</mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>
