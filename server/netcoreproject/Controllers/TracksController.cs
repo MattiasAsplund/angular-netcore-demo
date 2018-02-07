@@ -20,6 +20,10 @@ namespace netcoreproject.Controllers
         public TracksController(Chinook_SqliteContext context)
         {
             _context = context;
+
+            _context.Track?.Include(x => x.Album)
+                ?.ThenInclude(x => x.Artist)
+                ?.Load();
         }
 
         // GET: api/Tracks
@@ -31,13 +35,11 @@ namespace netcoreproject.Controllers
 
         // GET: api/AlbumsByGenre
         [Route("/api/tracksbyalbum/{id}")]
-        public IEnumerable<TrackViewModel> GetTracksByAlbum([FromRoute] long id)
+        public TracksByAlbumViewModel GetTracksByAlbum([FromRoute] long id)
         {
             return _context.Track
-                .Include(x => x.Album)
-                .ThenInclude(x => x.Artist)
                 ?.Where(t => t.Album.AlbumId == id)
-                .ConvertToViewModel();
+                .GetTracksByAlbumViewModel();
         }
 
         // GET: api/Tracks/5

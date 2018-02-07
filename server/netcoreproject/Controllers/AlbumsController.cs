@@ -20,21 +20,22 @@ namespace netcoreproject.Controllers
         public AlbumsController(Chinook_SqliteContext context)
         {
             _context = context;
+            _context?.Album?.Include(x => x.Artist)?.Load();
         }
 
         // GET: api/Albums
         [HttpGet]
-        public IEnumerable<Album> GetAlbum()
+        public IEnumerable<AlbumViewModel> GetAlbum()
         {
-            return _context.Album;
+            return _context.Album?.ConvertToViewModel();
         }
 
         // GET: api/AlbumsByGenre
         [Route("/api/albumsbygenre/{id}")]
         public IEnumerable<AlbumViewModel> GetAlbumsByGenre([FromRoute] long id)
         {
-            return _context.Album.Include(x => x.Artist)
-               ?.Where(a => a.Track.Any(t => t.GenreId == id))
+            return _context.Album
+                ?.Where(a => a.Track.Any(t => t.GenreId == id))
                 .ConvertToViewModel();
         }
 

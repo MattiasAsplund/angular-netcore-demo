@@ -27,5 +27,19 @@ namespace netcoreproject.ViewModels.Extensions
                 ArtistName = x.Album?.Artist?.Name
             }).ToList();
         }
+
+        public static TracksByAlbumViewModel GetTracksByAlbumViewModel(this IEnumerable<Track> tracks)
+        {
+            var enumerable = tracks?.ToList();
+            var _album = enumerable?.FirstOrDefault()?.Album;
+            if (_album == null) return null;
+            return new TracksByAlbumViewModel
+            {
+                AlbumId = _album.AlbumId,
+                AlbumName = _album.Title,
+                ArtistName = _album.Artist.Name,
+                Tracks = enumerable.ConvertToViewModel()
+            };
+        }
     }
 }
