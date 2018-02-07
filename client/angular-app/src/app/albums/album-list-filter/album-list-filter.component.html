@@ -3,10 +3,15 @@
                    [(ngModel)]="selectedGenre"
                    (change)="selectedGenreChanged(selectedGenre)">
     <mat-list-item>
-      <mat-radio-button class="radiobutton" [value]="'all'" [checked]="isActiveRoute('all')"> All</mat-radio-button>
+      <mat-radio-button class="radiobutton"
+                        [value]="'all'"
+                        [checked]="isActiveRoute('all')">All
+      </mat-radio-button>
     </mat-list-item>
     <mat-list-item *ngFor="let genre of genres | async">
-      <mat-radio-button class="radiobutton" [checked]="isActiveRoute(genre)" [value]="genre">
+      <mat-radio-button class="radiobutton"
+                        [checked]="isActiveRoute(genre.genreId)"
+                        [value]="genre.genreId">
         {{genre.name}}
       </mat-radio-button>
     </mat-list-item>

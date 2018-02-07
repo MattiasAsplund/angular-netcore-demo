@@ -1,4 +1,4 @@
-import {Component, OnInit, Inject} from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import {Genre} from '../../shared/models/genre';
 import {Observable} from 'rxjs/Observable';
 import {Chinook} from '../../shared/interfaces/chinook';
@@ -22,24 +22,12 @@ export class AlbumListFilterComponent implements OnInit {
     this.genres = this.chinookService.genres();
   }
 
-  private generateUrlSlug(genre: any): string {
-    if (genre === 'all') return genre;
-
-    return `${genre.genreId}-${genre.name
-      .replace(/\W/g, ' ')
-      .replace(/\s\s+/g, ' ')
-      .replace(/ /g, '_')}`;
+  selectedGenreChanged(genreId: any): void {
+    this.router.navigate(['/albums', genreId]);
   }
 
-  selectedGenreChanged(genre: any): void {
-    this.router.navigate(['/albums'], {
-      queryParams: {
-        g: this.generateUrlSlug(genre)
-      }
-    });
-  }
-
-  isActiveRoute(genre){
-    return this.activatedRoute.snapshot.queryParams['g'] === this.generateUrlSlug(genre)
+  isActiveRoute(genreId: any) {
+    let id = this.activatedRoute.snapshot.params['genreId'];
+    return genreId === 'all' ? true : +id === +genreId;
   }
 }

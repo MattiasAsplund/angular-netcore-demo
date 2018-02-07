@@ -8,12 +8,21 @@ import {SidenavResponsiveDirective} from '../shared/directives/sidenav-responsiv
 import {AlbumDetailsComponent} from './album-details/album-details.component';
 import {RouterModule} from '@angular/router';
 import {AlbumDetailsTracksComponent} from './album-details-tracks/album-details-tracks.component';
+import {TimeFormatPipe} from './shared/pipes/time-format.pipe';
+import {PropEmptyPlaceholderPipe} from './shared/pipes/prop-empty-placeholder.pipe';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import {albumsRoutes} from './albums.routes';
 
 @NgModule({
   imports: [
     CommonModule,
     MaterialModule,
-    RouterModule
+    FormsModule,
+    ReactiveFormsModule,
+    FlexLayoutModule,
+    RouterModule.forChild(albumsRoutes)
+
   ],
   declarations: [
     AlbumListComponent,
@@ -22,6 +31,8 @@ import {AlbumDetailsTracksComponent} from './album-details-tracks/album-details-
     AlbumDetailsComponent,
     SidenavResponsiveDirective,
     AlbumDetailsTracksComponent,
+    TimeFormatPipe,
+    PropEmptyPlaceholderPipe,
   ],
   exports: [
     AlbumsComponent

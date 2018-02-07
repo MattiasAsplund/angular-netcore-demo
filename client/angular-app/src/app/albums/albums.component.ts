@@ -1,5 +1,5 @@
-import {Component, OnDestroy} from '@angular/core';
-import { MediaQueryHelper} from '../shared/services/media-query.helper';
+import {Component} from '@angular/core';
+import {MediaQueryHelper} from '../shared/services/media-query.helper';
 
 @Component({
   selector: 'albums',

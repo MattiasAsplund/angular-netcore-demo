@@ -4,7 +4,6 @@ import {Subscription} from 'rxjs/Subscription';
 import {Observable} from 'rxjs/Observable';
 import {Chinook} from '../../shared/interfaces/chinook';
 import {Album} from '../../shared/models/album';
-import {animate, group, query, style, transition, trigger} from '@angular/animations';
 import {fadeInAnimation} from '../../shared/animations/fade-in.animation';
 
 @Component({
@@ -16,8 +15,8 @@ import {fadeInAnimation} from '../../shared/animations/fade-in.animation';
 })
 export class AlbumListComponent implements OnInit, OnDestroy {
 
-  private subscription: Subscription;
   public albums: Observable<Album[]>;
+  private subscription: Subscription;
 
   constructor(@Inject('Chinook') private chinookService: Chinook,
               private route: ActivatedRoute) {
@@ -27,22 +26,20 @@ export class AlbumListComponent implements OnInit, OnDestroy {
     this.subscribeToRouteChanged();
   }
 
+  ngOnDestroy(): void {
+    if (this.subscription)
+      this.subscription.unsubscribe();
+  }
+
   private subscribeToRouteChanged() {
-    this.subscription = this.route.queryParamMap.subscribe(x => {
-      let id = this.getIdFromSlug(x.get('g'));
+    this.subscription = this.route.paramMap.subscribe(x => {
+      let id = this.getIdFromRoute(x.get('genreId'));
       if (id < 0) return;
       this.albums = this.chinookService.albumsByGenre(id);
     });
   }
 
-  private getIdFromSlug(param: string): number {
-    if(param === 'all') return 0;
-    if (!param) return -1;
-    return +param.substr(0, param.indexOf('-'));
-  }
-
-  ngOnDestroy(): void {
-    if (this.subscription)
-      this.subscription.unsubscribe();
+  private getIdFromRoute(param: any): number {
+    return param === 0 || param === 'all' || !param ? 0 : +param;
   }
 }

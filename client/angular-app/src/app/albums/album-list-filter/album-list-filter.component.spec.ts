@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { AlbumListFilterComponent } from './album-list-filter.component';
+import {AlbumListFilterComponent} from './album-list-filter.component';
 
 describe('AlbumListFilterComponent', () => {
   let component: AlbumListFilterComponent;
@@ -8,9 +8,9 @@ describe('AlbumListFilterComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AlbumListFilterComponent ]
+      declarations: [AlbumListFilterComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
