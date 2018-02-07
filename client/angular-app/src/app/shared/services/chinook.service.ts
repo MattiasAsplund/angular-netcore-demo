@@ -5,7 +5,7 @@ import {Chinook} from '../interfaces/chinook';
 import {HttpClient} from '@angular/common/http';
 import {Endpoint} from '../endpoints/api.endpoint';
 import {Album} from '../models/album';
-import {Track} from '../models/track';
+import {TracksByAlbum} from '../models/track';
 
 @Injectable()
 export class ChinookService implements Chinook {
@@ -21,7 +21,7 @@ export class ChinookService implements Chinook {
     return this.httpClient.get<Album[]>(Endpoint.albumsByGenre(genreId));
   }
 
-  tracksByAlbum(albumId: number): Observable<Track[]> {
-    return this.httpClient.get<Track[]>(Endpoint.tracksByAlbum(albumId));
+  tracksByAlbum(albumId: number): Observable<TracksByAlbum> {
+    return this.httpClient.get<TracksByAlbum>(Endpoint.tracksByAlbum(albumId));
   }
 }

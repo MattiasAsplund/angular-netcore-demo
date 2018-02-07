@@ -1,4 +1,4 @@
-import {Directive, Inject, OnDestroy, OnInit} from '@angular/core';
+import {Directive, OnDestroy, OnInit} from '@angular/core';
 import {MatSidenav} from '@angular/material';
 import {Subscription} from 'rxjs/Subscription';
 import {BreakpointObserver} from '@angular/cdk/layout';

@@ -17,6 +17,9 @@ export const Endpoint = {
   },
 
   albumsByGenre(genreId: any): string {
+
+    if (genreId === 0) return Endpoint.albums;
+
     return EnvEndpoint.base
       + (environment.production
         ? ChinookEndpoint_PROD.albumsByGenre + genreId
@@ -39,7 +42,7 @@ export const ChinookEndpoint_PROD = {
 };
 
 export const ChinookEndpoint_DEV = {
-  albums: '/albums.json',
+  albums: '/albumsByGenre.json',
   genres: '/genres.json',
   albumsByGenre: '/albumsByGenre.json',
   tracksByAlbum: '/tracksByAlbum_v2.json'

@@ -1,6 +1,6 @@
-import { TestBed, inject } from '@angular/core/testing';
+import {inject, TestBed} from '@angular/core/testing';
 
-import { ChinookService } from './chinook.service';
+import {ChinookService} from './chinook.service';
 
 describe('ChinookService', () => {
   beforeEach(() => {

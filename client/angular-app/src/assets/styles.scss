@@ -2,20 +2,23 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+
 }
+
 @import "../../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
 
-.radiobutton > label.mat-radio-label{
+.radiobutton > label.mat-radio-label {
   width: 100%;
   height: 100%;
 }
+
 main {
   padding: 0 20px;
   min-height: 300px;
 
   /* side form */
   .view-side-form {
-    > *> {
+    > * > {
       z-index: 100;
     }
     .side-form {
@@ -23,15 +26,28 @@ main {
       z-index: 100;
       top: 0;
       right: 0;
-      width: 80%;
+      width: 85vw;
       height: 100%;
       overflow: auto;
       background: #fff;
       padding: 0;
       border-left: 1px solid #e0e0e0;
+
+      @media(max-width: 600px) {
+        width: 100vw;
+      }
     }
   }
 }
-album-details{
+
+album-details {
   z-index: 100;
+}
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+h1, h2 {
+  &.example-app-name {
+    margin-left: 8px;
+  }
 }

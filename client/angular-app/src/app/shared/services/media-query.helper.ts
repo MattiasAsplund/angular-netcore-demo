@@ -1,4 +1,6 @@
 export class MediaQueryHelper {
+  private static _isMobile: boolean;
+
   static get isMobile(): boolean {
     return this._isMobile;
   }
@@ -6,6 +8,4 @@ export class MediaQueryHelper {
   static set isMobile(value: boolean) {
     this._isMobile = value;
   }
-
-  private static _isMobile: boolean;
 }

@@ -4,4 +4,13 @@ export interface Track {
   composer: string;
   milliseconds: number;
   artistName: string;
+  albumName: string;
+}
+
+export interface TracksByAlbum {
+  albumId: number;
+  albumName: string;
+  artistName: string;
+
+  tracks: Track[];
 }

@@ -1,65 +1,98 @@
-[
-  {
-    "trackId": 2523,
-    "trackName": "Morning Dance",
-    "composer": "Jay Beckenstein",
-    "milliseconds": 238759,
-    "artistName": "Spyro Gyra"
-  },
-  {
-    "trackId": 2524,
-    "trackName": "Jubilee",
-    "composer": "Jeremy Wall",
-    "milliseconds": 275147,
-    "artistName": "Spyro Gyra"
-  },
-  {
-    "trackId": 2525,
-    "trackName": "Rasul",
-    "composer": "Jeremy Wall",
-    "milliseconds": 238315,
-    "artistName": "Spyro Gyra"
-  },
-  {
-    "trackId": 2526,
-    "trackName": "Song For Lorraine",
-    "composer": "Jay Beckenstein",
-    "milliseconds": 240091,
-    "artistName": "Spyro Gyra"
-  },
-  {
-    "trackId": 2527,
-    "trackName": "Starburst",
-    "composer": "Jeremy Wall",
-    "milliseconds": 291500,
-    "artistName": "Spyro Gyra"
-  },
-  {
-    "trackId": 2528,
-    "trackName": "Heliopolis",
-    "composer": "Jay Beckenstein",
-    "milliseconds": 338729,
-    "artistName": "Spyro Gyra"
-  },
-  {
-    "trackId": 2529,
-    "trackName": "It Doesn't Matter",
-    "composer": "Chet Catallo",
-    "milliseconds": 270027,
-    "artistName": "Spyro Gyra"
-  },
-  {
-    "trackId": 2530,
-    "trackName": "Little Linda",
-    "composer": "Jeremy Wall",
-    "milliseconds": 264019,
-    "artistName": "Spyro Gyra"
-  },
-  {
-    "trackId": 2531,
-    "trackName": "End Of Romanticism",
-    "composer": "Rick Strauss",
-    "milliseconds": 320078,
-    "artistName": "Spyro Gyra"
-  }
-]
+{
+  "albumId": 48,
+  "albumName": "The Essential Miles Davis [Disc 1]",
+  "artistName": "Miles Davis",
+  "tracks": [
+    {
+      "trackId": 597,
+      "trackName": "Now's The Time",
+      "composer": "Miles Davis",
+      "milliseconds": 197459,
+      "artistName": "Miles Davis"
+    },
+    {
+      "trackId": 598,
+      "trackName": "Jeru",
+      "composer": "Miles Davis",
+      "milliseconds": 193410,
+      "artistName": "Miles Davis"
+    },
+    {
+      "trackId": 599,
+      "trackName": "Compulsion",
+      "composer": "Miles Davis",
+      "milliseconds": 345025,
+      "artistName": "Miles Davis"
+    },
+    {
+      "trackId": 600,
+      "trackName": "Tempus Fugit",
+      "composer": "Miles Davis",
+      "milliseconds": 231784,
+      "artistName": "Miles Davis"
+    },
+    {
+      "trackId": 601,
+      "trackName": "Walkin'",
+      "composer": "Miles Davis",
+      "milliseconds": 807392,
+      "artistName": "Miles Davis"
+    },
+    {
+      "trackId": 602,
+      "trackName": "'Round Midnight",
+      "composer": "Miles Davis",
+      "milliseconds": 357459,
+      "artistName": "Miles Davis"
+    },
+    {
+      "trackId": 603,
+      "trackName": "Bye Bye Blackbird",
+      "composer": "Miles Davis",
+      "milliseconds": 476003,
+      "artistName": "Miles Davis"
+    },
+    {
+      "trackId": 604,
+      "trackName": "New Rhumba",
+      "composer": "Miles Davis",
+      "milliseconds": 277968,
+      "artistName": "Miles Davis"
+    },
+    {
+      "trackId": 605,
+      "trackName": "Generique",
+      "composer": "Miles Davis",
+      "milliseconds": 168777,
+      "artistName": "Miles Davis"
+    },
+    {
+      "trackId": 606,
+      "trackName": "Summertime",
+      "composer": "Miles Davis",
+      "milliseconds": 200437,
+      "artistName": "Miles Davis"
+    },
+    {
+      "trackId": 607,
+      "trackName": "So What",
+      "composer": "Miles Davis",
+      "milliseconds": 564009,
+      "artistName": "Miles Davis"
+    },
+    {
+      "trackId": 608,
+      "trackName": "The Pan Piper",
+      "composer": "Miles Davis",
+      "milliseconds": 233769,
+      "artistName": "Miles Davis"
+    },
+    {
+      "trackId": 609,
+      "trackName": "Someday My Prince Will Come",
+      "composer": "Miles Davis",
+      "milliseconds": 544078,
+      "artistName": "Miles Davis"
+    }
+  ]
+}

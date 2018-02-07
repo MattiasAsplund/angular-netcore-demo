@@ -8,15 +8,24 @@ import {MaterialModule} from './shared/shared.module';
 import {RouterModule} from '@angular/router';
 import {AlbumsModule} from './albums/albums.module';
 import {appRoutes} from './app.routes';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import {CommonModule} from '@angular/common';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    CommonModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    FlexLayoutModule,
     BrowserModule,
     CoreModule,
-     RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(appRoutes),
     MaterialModule,
     AlbumsModule,
   ],

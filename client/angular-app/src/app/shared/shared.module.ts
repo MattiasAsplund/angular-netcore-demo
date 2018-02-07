@@ -1,7 +1,5 @@
 import {NgModule} from '@angular/core';
 
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {
   MatAutocompleteModule,
   MatButtonModule,
@@ -29,14 +27,13 @@ import {
   MatSlideToggleModule,
   MatSnackBarModule,
   MatSortModule,
+  MatStepperModule,
   MatTableModule,
   MatTabsModule,
   MatToolbarModule,
   MatTooltipModule,
-  MatStepperModule,
 } from '@angular/material';
 import {CdkTableModule} from '@angular/cdk/table';
-import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
   exports: [
@@ -72,10 +69,6 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     MatTabsModule,
     MatToolbarModule,
     MatTooltipModule,
-    BrowserAnimationsModule,
-    FormsModule,
-    ReactiveFormsModule,
-    FlexLayoutModule
   ]
 })
 export class MaterialModule {
