@@ -1,5 +1,4 @@
 import {Component, Input} from '@angular/core';
-import {MatTableDataSource} from '@angular/material';
 import {Track} from '../../shared/models/track';
 import {fadeInAnimation} from '../../shared/animations/fade-in.animation';
 
@@ -12,15 +11,16 @@ import {fadeInAnimation} from '../../shared/animations/fade-in.animation';
 
 })
 export class AlbumDetailsTracksComponent {
-  @Input('datasource')
-  set dataSource(value: MatTableDataSource<Track>) {
-    this._dataSource = value;
+  public displayedColumns = ['No', 'Track', 'Artist', 'Composer', 'Length'];
+  private _tracksByAlbum: Track[];
+
+  get tracks(): Track[] {
+    return this._tracksByAlbum;
   }
 
-  get dataSource(): MatTableDataSource<Track> {
-    return this._dataSource;
+  @Input('tracks')
+  set tracks(value: Track[]) {
+    if (!value) return;
+    this._tracksByAlbum = value;
   }
-
-  private _dataSource = new MatTableDataSource<Track>();
-  public displayedColumns = ['trackId', 'trackName', 'artistName', 'composer', 'milliseconds'];
 }

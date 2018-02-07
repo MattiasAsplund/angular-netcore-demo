@@ -1,8 +1,22 @@
 <div class="side-form">
   <mat-toolbar>
     <mat-toolbar-row>
-      <button mat-raised-button (click)="close()">Close</button>
+      <button mat-icon-button matTooltip="Close" (click)="close()">
+        <mat-icon>close</mat-icon>
+      </button>
+      <h2 class="example-app-name">Details</h2>
+
     </mat-toolbar-row>
   </mat-toolbar>
-  <album-details-tracks [datasource]="dataSource"></album-details-tracks>
+  <div *ngIf="tracksByAlbum | async as _albumTracks;">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title> {{_albumTracks?.albumName}}</mat-card-title>
+        <mat-card-subtitle> {{_albumTracks?.artistName}}</mat-card-subtitle>
+      </mat-card-header>
+      <album-details-tracks [tracks]="_albumTracks?.tracks"></album-details-tracks>
+    </mat-card>
+  </div>
 </div>
+
+<div class="background-overlay" (click)="close()"></div>

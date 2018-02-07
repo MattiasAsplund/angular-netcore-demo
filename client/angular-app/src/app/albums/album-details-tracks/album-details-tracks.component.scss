@@ -1,0 +1,82 @@
+:host {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  > * {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+  }
+}
+
+.row {
+  min-height: 48px;
+  border-bottom: 1px solid rgba(0, 0, 0, .12);
+  padding: 0 24px;
+}
+
+.cell {
+  color: rgba(0, 0, 0, .87);
+  font-size: 14px;
+}
+
+.header-row {
+  min-height: 56px;
+}
+
+.header-row, .row {
+  padding: 0 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, .12);
+}
+
+.header-cell {
+  color: rgba(0, 0, 0, .54);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0 12px;
+}
+
+table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+td, th {
+  width: 100%;
+  text-align: center;
+}
+
+td {
+  padding: 0 12px;
+}
+
+tr {
+  align-items: center;
+}
+
+tfoot {
+  tr {
+    min-height: 56px;
+    th {
+      align-items: right;
+      text-align: right;
+    }
+  }
+}
+
+.rrow {
+  width: 100%;
+  display: flex;
+  min-height: 48px;
+  border-bottom: 1px solid rgba(0, 0, 0, .12);
+}
+
+@media(max-width: 800px) {
+  td, th {
+    text-align: left;
+    padding: 0 10px
+  }
+  table {
+    min-width: 500px;
+  }
+}
+
+.idcol {
+  width: auto;
+}
